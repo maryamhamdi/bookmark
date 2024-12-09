@@ -1,0 +1,104 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <title>Book Mark</title>
+  </head>
+  <body>
+
+ 
+
+<!-- Modal -->
+<div class="modal fade  d-none  justify-content-center align-items-center"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <div class="shapes d-flex">
+          <div class="ms-4 mt-3 border rounded-circle bg-danger"></div>
+          <div class="ms-4 mt-3 border rounded-circle bg-warning"></div>
+          <div class="ms-4 mt-3 border rounded-circle bg-success"></div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+     
+      <p class="mt-3 p-icon ms-3 fw-bold lead">Site Name or Url is not valid, Please follow the rules below :</p>
+      <div class=" d-flex align-items-center">
+      
+        <i class="  fa-regular fa-circle-right p-2 text-danger "></i>
+        <p class="p-icon fw-light">Site name must contain at least 3 characters and first char must capital</p>
+      </div>
+      <div class=" d-flex align-items-center">
+      
+        <i class="  fa-regular fa-circle-right p-2 text-danger "></i>
+        <p class="p-icon fw-light">Site URL must be a valid one</p>
+      </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+      
+
+  <div class="container">
+    <h1 class="h1 m-auto mt-5">BookMarker</h1>
+    <hr class="opacity-75 mt-5 border-1 border-black">
+    <div class="contact  text-center">
+  <h2>
+    <i class="fa-solid fa-bookmark"></i>
+    Bookmark your favorite sites
+    <i class="fa-solid fa-bookmark"></i>
+  </h2>
+    <label for="" class="d-flex mb-3 mt-3 fw-bold">
+      <i class="fa-solid fa-book-bookmark pe-2"></i>
+      Site Name
+    </label>
+    <input type="text" placeholder="Bookmark Name" class="form-control" id="inputname">
+    <label for="" class="d-flex mb-3 mt-3 fw-bold">
+      <i class="fa-solid fa-link pe-2"></i>
+      Site URL
+    </label>
+    <input type="text" placeholder="Website URL" class="form-control" id="inputurl" >
+    <button type="button" class="px-5 mt-5 btn btn-danger" id="sumbtn"  data-bs-toggle="modal" data-bs-target="#exampleModal">submit</button>
+    </div>
+
+    <hr class="opacity-75 mt-5 border-1 border-black mb-5">
+
+    <table class="table mt-4 text-center  table-striped ">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+        <tbody id="tableContent">
+        <tr>
+            <!-- <td>1</td>
+                      <td>Google</td>              
+                      <td>
+                        <button class="btn btn-visit" data-index="0" >
+                          <i class="fa-solid fa-eye pe-2"></i>Visit
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-delete pe-2" data-index="0">
+                          <i class="fa-solid fa-trash-can"></i>
+                          Delete
+                        </button>
+                      </td> -->
+         </tr>
+         </tbody>
+    </table>
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>   
+    </body>
+</html>

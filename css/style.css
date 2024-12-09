@@ -1,0 +1,77 @@
+body{
+    background-color: #f7ecde;
+    font-family: "PT Sans caption", sans-serif;
+}
+
+.h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;  
+}
+.h1:hover::after {
+    height: 70%;
+}
+.h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fec260;
+    width: 100%;
+    height: 30%;
+    transition: height 0.2s;
+    cursor: text;
+    z-index: -1;
+}
+
+hr{
+    border:  dashed !important;
+}
+
+h2 i ,h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: 2px solid #bb7307 !important;
+    box-shadow: 10px 10px 5px -3px rgba(45, 31, 2, 0.53) !important;
+}
+
+.shapes > div {
+    width: 30px;
+    height: 30px;
+}
+.p-icon{
+    font-size: 30px;
+}
+.fa-regular{
+    font-size: 25px;
+}
+.close-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+@media(max-width:1400px){
+    .p-icon{
+        font-size: 20px;
+    }
+    @media(max-width:700px) {
+        .modal-header{
+            width: 95%;
+        }
+        .submit{
+            width: 25%;
+        }
+        
+    }
+}
+
+
